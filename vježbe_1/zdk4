@@ -1,0 +1,30 @@
+def izracunaj_jednadzbu_pravca(x1, y1, x2, y2):
+    if x1 == x2:
+        return f"Pravac je vertikalan, x = {x1}"
+    else:
+        nagib = (y2 - y1) / (x2 - x1)
+        odsjecak = y1 - nagib * x1
+        return f"Jednadžba pravca: y = {nagib}x + {odsjecak}"
+
+# Funkcija za unos koordinata ostaje ista
+def unesi_koordinate():
+    while True:
+        try:
+            x1 = float(input("Unesite x koordinatu prve točke: "))
+            y1 = float(input("Unesite y koordinatu prve točke: "))
+            x2 = float(input("Unesite x koordinatu druge točke: "))
+            y2 = float(input("Unesite y koordinatu druge točke: "))
+            return x1, y1, x2, y2
+        except ValueError:
+            print("Pogrešan unos. Molimo vas unesite brojčane vrijednosti.")
+
+# Glavni dio programa
+if __name__ == "__main__":
+    print("Unesite koordinate za dvije točke:")
+    x1, y1, x2, y2 = unesi_koordinate()
+    
+    print(f"\nTočka 1: ({x1}, {y1})")
+    print(f"Točka 2: ({x2}, {y2})")
+
+    jednadzba_pravca = izracunaj_jednadzbu_pravca(x1, y1, x2, y2)
+    print(jednadzba_pravca)
