@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def gibanje_projektila(v0, theta, vrijeme_koraka, ukupno_vrijeme):
+def kosi_hitac(v0, theta, vrijeme_koraka, ukupno_vrijeme):
     g = 9.81
     theta_rad = np.radians(theta)
 
@@ -46,10 +46,10 @@ def crtaj_grafove(lista_t, lista_x, lista_y):
     plt.show()
 
 v0 = 25 
-theta = 53.13
-vrijeme_koraka = 0.1
+theta = 53
+vrijeme_koraka = 1 
 ukupno_vrijeme = 10
 
-t, x, y = gibanje_projektila(v0, theta, vrijeme_koraka, ukupno_vrijeme)
+t, x, y = kosi_hitac(v0, theta, vrijeme_koraka, ukupno_vrijeme)
 crtaj_grafove(t, x, y)
 

@@ -26,9 +26,10 @@ def crtaj_grafove(lista_t, lista_x, lista_v, lista_a):
     plt.grid(True)
     plt.show()
 
+v0=25
 sila = 300
 masa = 2
-vrijeme_koraka = 1
+vrijeme_koraka = 1 
 ukupno_vrijeme = 10
 
 t, x, v, a = jednoliko_gibanje(sila, masa, vrijeme_koraka, ukupno_vrijeme)
