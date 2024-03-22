@@ -1,8 +1,8 @@
 def iteracija(broj):
-    x = 5 # definiram broj od kojeg oduzimam i zbrajam
-    for i in range(broj): # za svaki broj u nizu, dodajem 1/3 broju 5 odnosno a
+    x = 5 # definiram varijablu od kojeg oduzimam i zbrajam 1/3
+    for i in range(broj): # za svaki broj u nizu dodajem 1/3 broju 5 odnosno varijabli 
         x += (1/3)
-    for i in range(broj): #za svaki broj u nizu oduzimam 1/3 broju 5
+    for i in range(broj): #za svaki broj u nizu oduzimam 1/3 
         x -= (1/3)
     print(x)
 
