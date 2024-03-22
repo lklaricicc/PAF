@@ -9,3 +9,5 @@ def iteracija(broj):
 iteracija(200)
 iteracija(2000)
 iteracija(20000)
+
+#u ovom kodu rezultat se ispisuje direktno u funkciju "iteracija(broj)", a konačni rezultat ispisuje direktno bez naredbe return (koristim samo jednu funkciju)
