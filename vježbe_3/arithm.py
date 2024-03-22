@@ -37,5 +37,5 @@ for element in y:
     dev_y1.append (dev_y)
 print(dev_y1)
 
-plt.scatter(dev_x1, dev_y1)
+plt.scatter(dev_x1, dev_y1) #raspršenost po grafu
 plt.show()
