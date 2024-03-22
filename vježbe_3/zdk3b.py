@@ -1,25 +1,15 @@
-import math
+import numpy as np
+import matplotlib.pyplot as plt
+x= [1,2,3,4,5,6,7,8,9,10]
+y= [11,12,13,14,15,16,17,18,19,20]
 
-def aritmeticka_sredina(tocke):
-    return sum(tocke) / len(tocke)
+arth_x= np.mean(x)
+arth_y= np.mean(y)
+print(arth_x)
+print(arth_y)
 
-def standardna_devijacija(tocke, srednja_vrijednost):
-    suma_kvadrata_odstupanja = sum((x - srednja_vrijednost) ** 2 for x in tocke)
-    varijanca = suma_kvadrata_odstupanja / len(tocke)
-    return math.sqrt(varijanca)
+dev_x = np.std(x) / np.sqrt(len(x) - 1)
+dev_y = np.std(y) / np.sqrt(len(y) - 1)
+print(dev_x)
+print(dev_y)
 
-# Unos točaka
-tocke = []
-for i in range(10):
-    tocka = float(input(f"Unesite {i+1}. točku: "))
-    tocke.append(tocka)
-
-# Računanje aritmetičke sredine
-sredina = aritmeticka_sredina(tocke)
-
-# Računanje standardne devijacije
-devijacija = standardna_devijacija(tocke, sredina)
-
-# Ispis rezultata
-print("Aritmetička sredina:", sredina)
-print("Standardna devijacija:", devijacija)
