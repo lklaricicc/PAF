@@ -9,3 +9,5 @@ def iteracija(broj):
 iteracija(200)
 iteracija(2000)
 iteracija(20000)
+
+#rezultat se ispisuje direktno u funkciju "iteracija" za razliku od zdk2.py i ne koristim return 
