@@ -12,10 +12,10 @@ class Particle:
         self.puty = []
         
         def info(self):                            
-        print("v0:", self.v0)
-        print("x0:", self.x0)
-        print("y0:", self.y0)
-        print("kut:", self.fi)
+            print("v0:", self.v0)
+            print("x0:", self.x0)
+            print("y0:", self.y0)
+            print("kut:", self.fi)
         
     def reset(self):                            
         self.v0 = 0
@@ -41,7 +41,7 @@ class Particle:
               self.puty.append(self.y0)
               t0 = t0 + dt 
 
-    def range(Self):
+    def range(self):
         t = 0
         g = 9.81
         vx0 = self.v0 * np.cos ((self.fi /180) * np.pi)
@@ -57,7 +57,7 @@ class Particle:
 
             t = t + self.dt
 
-         self.x0 = self.putx [-1]
+        self.x0 = self.putx [-1]
         self.y0 = 0
         return self.putx[-1]
 
@@ -72,5 +72,3 @@ class Particle:
     def analiticki_domet(self):
         a_domet = ((self.v0)**2 * np.sin(2*((self.fi /180)*np.pi))) / 9.81
         return a_domet
-
-
