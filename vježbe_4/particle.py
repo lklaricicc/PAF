@@ -58,8 +58,14 @@ class Particle:
         return self.koox[-1]
     
     def plot_trajectory(self):
+        plt.xlabel ("x kordinata")
+        plt.ylabel ("y label")
+        plt.title ("Projectile trajectory")
+        plt.grid (True)
         plt.plot (self.koox,self.kooy)
         plt.show ()
     def analiticki_domet(self):
         domet = ((self.v0) ** 2 * np.sin (2 * (self.fi / 180) * np.pi)) / 9.81
         return domet
+    
+#nazvala sam koordinate x i y koox i kooy jer mi je tako bilo lakše
