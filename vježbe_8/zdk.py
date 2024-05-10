@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import program as p
+import program as pg
 
-č1 = p.čestica (0.3,1,(0,0,0), (0.1,0.1,0.1), (0,0,0,), (0,0,1), 0.01)
-č2 = p.čestica(0.3,-1, (0,0,0), (0.1,0.1,0.1), (0,0,0,), (0,0,1), 0.01)
+č1 = pg.čestica (0.3,1,(0,0,0), (0.1,0.1,0.1), (0,0,0,), (0,0,1), 0.01)
+č2 = pg.čestica(0.3,-1, (0,0,0), (0.1,0.1,0.1), (0,0,0,), (0,0,1), 0.01)
 pozitron = č1.gibanje (5) #simuliram gibanje čestice tijekom 5 vremenskih koraka
 elektron = č2.gibanje (5)
 
