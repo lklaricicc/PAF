@@ -1,3 +1,5 @@
+#oba grafa tj koda spojena u jedan
+
 import matplotlib.pyplot as plt
 import numpy as np
 import program as pg

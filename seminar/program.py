@@ -1,4 +1,4 @@
-#dio iz vježbe 8
+#dio iz vježbe 8 i početni file koji se u sve ostale primjere importa 
 import numpy as np
 
 class čestica:

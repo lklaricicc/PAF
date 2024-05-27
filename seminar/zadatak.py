@@ -8,10 +8,10 @@ import program as pg
 masa = 0.3
 naboj_elektron = -1
 naboj_pozitron = 1
-pozicija = (0, 0, 0)
-brzina = (0.1, 0.1, 0.1)
-elektricno_polje = (0, 0, 0)
-magnetsko_polje = (0, 0, 1)
+pozicija = (0, 0, 0) #čestica započinje iz ishodišta koo.sus.
+brzina = (0.1, 0.1, 0.1) #stavljene su vrijednosti različite od nule kako bi čestica reairala na magnetskom polje u 3d
+elektricno_polje = (0, 0, 0) #stavljeno je na nulu jer želimo proučavati gibanje čestice samo u magnetskom polju
+magnetsko_polje = (0, 0, 1) #u zdk u vježbi 8 definirano je kao 0,0,B što znači da je usmjereno put z osi i mi ćemo postaviti B na 1
 dt = 0.01
 t = 5
 
